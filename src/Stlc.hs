@@ -1,6 +1,6 @@
 {-# LANGUAGE UnicodeSyntax, GADTSyntax, ExplicitForAll #-}
 
-module LambdaPi where
+module Stlc where
 
 -------
 -- Types and terms

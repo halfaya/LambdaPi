@@ -7,6 +7,9 @@ import LambdaPi
 fid ∷ CTerm
 fid = Lam (Inf $ Bound 0)
 
+vconst ∷ Value
+vconst = VLam (\x → VLam (\y → x))
+
 checkFid ∷ Result ()
 checkFid = ctype 0 [] (Fun (TFree (Global "a")) (TFree (Global "a"))) fid
 
